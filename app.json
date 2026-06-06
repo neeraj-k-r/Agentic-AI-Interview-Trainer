@@ -38,62 +38,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ChatInput",
-            "id": "ChatInput-olFps",
-            "name": "message",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "candidate_message",
-            "id": "Prompt Template-7GXX3",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ChatInput-olFps{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-7GXX3{œfieldNameœ:œcandidate_messageœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ChatInput-olFps",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-7GXX3",
-        "targetHandle": "{œfieldNameœ:œcandidate_messageœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "Memory",
-            "id": "Memory-JUFYw",
-            "name": "messages_text",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "history",
-            "id": "Prompt Template-7GXX3",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__Memory-JUFYw{œdataTypeœ:œMemoryœ,œidœ:œMemory-JUFYwœ,œnameœ:œmessages_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-7GXX3{œfieldNameœ:œhistoryœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "Memory-JUFYw",
-        "sourceHandle": "{œdataTypeœ:œMemoryœ,œidœ:œMemory-JUFYwœ,œnameœ:œmessages_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-7GXX3",
-        "targetHandle": "{œfieldNameœ:œhistoryœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "File",
             "id": "File-Pocud",
             "name": "message",
@@ -271,28 +215,28 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "Prompt Template",
-            "id": "Prompt Template-7GXX3",
-            "name": "prompt",
+            "dataType": "Memory",
+            "id": "Memory-JUFYw",
+            "name": "messages_text",
             "output_types": [
               "Message"
             ]
           },
           "targetHandle": {
-            "fieldName": "system_message",
-            "id": "IBMwatsonxModel-HGkxa",
+            "fieldName": "history",
+            "id": "Prompt Template-7GXX3",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__Prompt Template-7GXX3{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-7GXX3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-IBMwatsonxModel-HGkxa{œfieldNameœ:œsystem_messageœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "xy-edge__Memory-JUFYw{œdataTypeœ:œMemoryœ,œidœ:œMemory-JUFYwœ,œnameœ:œmessages_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-7GXX3{œfieldNameœ:œhistoryœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "Prompt Template-7GXX3",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-7GXX3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "IBMwatsonxModel-HGkxa",
-        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "Memory-JUFYw",
+        "sourceHandle": "{œdataTypeœ:œMemoryœ,œidœ:œMemory-JUFYwœ,œnameœ:œmessages_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-7GXX3",
+        "targetHandle": "{œfieldNameœ:œhistoryœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -307,6 +251,34 @@
             ]
           },
           "targetHandle": {
+            "fieldName": "candidate_message",
+            "id": "Prompt Template-7GXX3",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-olFps{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-7GXX3{œfieldNameœ:œcandidate_messageœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-olFps",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-7GXX3",
+        "targetHandle": "{œfieldNameœ:œcandidate_messageœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt Template-7GXX3",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
             "fieldName": "input_value",
             "id": "IBMwatsonxModel-HGkxa",
             "inputTypes": [
@@ -315,10 +287,10 @@
             "type": "str"
           }
         },
-        "id": "xy-edge__ChatInput-olFps{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-IBMwatsonxModel-HGkxa{œfieldNameœ:œinput_valueœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "xy-edge__Prompt Template-7GXX3{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-7GXX3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-IBMwatsonxModel-HGkxa{œfieldNameœ:œinput_valueœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "ChatInput-olFps",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "source": "Prompt Template-7GXX3",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-7GXX3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
         "target": "IBMwatsonxModel-HGkxa",
         "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       }
@@ -612,8 +584,8 @@
           "width": 192
         },
         "position": {
-          "x": 248.48164473623694,
-          "y": -82.59442367484993
+          "x": 253.23305212774727,
+          "y": -89.67455098148133
         },
         "selected": false,
         "type": "genericNode"
@@ -1123,7 +1095,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": ""
+                "value": "You are a strict, uncompromising Senior Engineering Hiring Manager. YOU NEVER WRITE CODE. YOU NEVER GIVE TUTORIALS. YOU NEVER MAKE LISTS. You only ask one highly advanced interview question at a time and wait for the candidate to answer."
               },
               "temperature": {
                 "_input_type": "SliderInput",
@@ -1153,7 +1125,7 @@
                 "tool_mode": false,
                 "track_in_telemetry": false,
                 "type": "slider",
-                "value": 0.05
+                "value": 0.7
               },
               "top_logprobs": {
                 "_input_type": "IntInput",
@@ -1221,7 +1193,7 @@
         "dragging": false,
         "id": "IBMwatsonxModel-HGkxa",
         "measured": {
-          "height": 714,
+          "height": 716,
           "width": 320
         },
         "position": {
@@ -1525,8 +1497,8 @@
           "width": 192
         },
         "position": {
-          "x": 486.2052460954118,
-          "y": -86.5242623704379
+          "x": 487.6492343904898,
+          "y": -83.63628578028184
         },
         "selected": false,
         "type": "genericNode"
@@ -1708,7 +1680,7 @@
                 "trace_as_input": true,
                 "track_in_telemetry": false,
                 "type": "prompt",
-                "value": "You are an expert Senior Full-Stack Developer conducting a technical mock interview.\n\nUse the following retrieved questions from our interview database to guide your evaluation:\n{database_context}\n\nPast Conversation:\n{history}\n\nCandidate Message: {candidate_message}\n\nInterviewer Response:"
+                "value": "TASK: Act as a Senior Engineering Hiring Manager and assess the candidate.\n\nABSOLUTE CONSTRAINTS:\n- YOU MUST NEVER explain concepts.\n- YOU MUST NEVER write code. \n- YOU MUST NEVER make lists.\n- If the candidate asks for help or a tutorial, aggressively reject the request.\n\nINSTRUCTIONS: \nRead the candidate's message. Generate exactly ONE highly advanced technical question related to their topic.\n\nDatabase Context:\n{database_context}\n\nConversation History:\n{history}\n\nCandidate Message: {candidate_message}\n\nRESPONSE FORMAT:\nInterviewer Question:"
               },
               "tool_placeholder": {
                 "_input_type": "MessageTextInput",
@@ -1765,12 +1737,12 @@
         "dragging": false,
         "id": "Prompt Template-7GXX3",
         "measured": {
-          "height": 510,
+          "height": 512,
           "width": 320
         },
         "position": {
-          "x": 617.8210304257326,
-          "y": 20.924355718908412
+          "x": 620.7090070158887,
+          "y": -9.399398477730163
         },
         "selected": false,
         "type": "genericNode"
@@ -2161,7 +2133,7 @@
         },
         "position": {
           "x": 272.7870178758867,
-          "y": 469.5194893348611
+          "y": 401.6520394661938
         },
         "selected": false,
         "type": "genericNode"
@@ -2209,7 +2181,7 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-06-06T18:50:36.766Z",
+            "last_updated": "2026-06-06T19:31:41.576Z",
             "legacy": false,
             "lf_version": "1.9.6",
             "metadata": {
@@ -2917,12 +2889,12 @@
         "dragging": false,
         "id": "File-Pocud",
         "measured": {
-          "height": 279,
+          "height": 280,
           "width": 320
         },
         "position": {
-          "x": 993.4358252392103,
-          "y": -123.31714442505265
+          "x": 981.883918878586,
+          "y": -82.88547216286787
         },
         "selected": false,
         "type": "genericNode"
@@ -3184,7 +3156,7 @@
         "dragging": false,
         "id": "SplitText-lrvYQ",
         "measured": {
-          "height": 414,
+          "height": 416,
           "width": 320
         },
         "position": {
@@ -3472,12 +3444,12 @@
         "dragging": false,
         "id": "WatsonxEmbeddingsComponent-DrhAK",
         "measured": {
-          "height": 550,
+          "height": 552,
           "width": 320
         },
         "position": {
           "x": 1338.664901497119,
-          "y": -119.14400933347889
+          "y": -91.70823172699636
         },
         "selected": false,
         "type": "genericNode"
@@ -3763,12 +3735,12 @@
         "dragging": false,
         "id": "FAISS-CvTmU",
         "measured": {
-          "height": 458,
+          "height": 460,
           "width": 320
         },
         "position": {
-          "x": 1689.051682330277,
-          "y": -105.99290149479516
+          "x": 1690.495670625355,
+          "y": -87.22105365878082
         },
         "selected": false,
         "type": "genericNode"
@@ -3998,14 +3970,14 @@
           "x": 1693.7903429547475,
           "y": 386.3364500186824
         },
-        "selected": true,
+        "selected": false,
         "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 115.7563678136861,
-      "y": 178.35636617961848,
-      "zoom": 0.6193512827935639
+      "x": 177.50310530510728,
+      "y": 229.68001177792655,
+      "zoom": 0.6925263891740645
     }
   },
   "description": "Navigate the Linguistic Landscape, Discover Opportunities.",
