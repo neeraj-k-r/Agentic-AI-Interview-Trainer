@@ -65,11 +65,10 @@ Navigate to the `backend/` folder and create a `.env` file containing the follow
 PORT=5000
 LANGFLOW_BASE_URL=http://127.0.0.1:7860
 LANGFLOW_FLOW_ID=5f0a9c53-803c-4e86-8b37-a8b7b3196d40
-LANGFLOW_API_TOKEN=your_langflow_api_token_here
+
 ```
 
-> [!WARNING]
-> Keep your `.env` files local. The root `.gitignore` is configured to prevent these files from being committed to public repositories.
+
 
 ---
 
