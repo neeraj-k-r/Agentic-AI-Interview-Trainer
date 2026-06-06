@@ -184,34 +184,6 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ChatOutput",
-            "id": "ChatOutput-Rp0Kr",
-            "name": "message",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "search_query",
-            "id": "FAISS-CvTmU",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "query"
-          }
-        },
-        "id": "xy-edge__ChatOutput-Rp0Kr{œdataTypeœ:œChatOutputœ,œidœ:œChatOutput-Rp0Krœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-FAISS-CvTmU{œfieldNameœ:œsearch_queryœ,œidœ:œFAISS-CvTmUœ,œinputTypesœ:[œMessageœ],œtypeœ:œqueryœ}",
-        "selected": false,
-        "source": "ChatOutput-Rp0Kr",
-        "sourceHandle": "{œdataTypeœ:œChatOutputœ,œidœ:œChatOutput-Rp0Krœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "FAISS-CvTmU",
-        "targetHandle": "{œfieldNameœ:œsearch_queryœ,œidœ:œFAISS-CvTmUœ,œinputTypesœ:[œMessageœ],œtypeœ:œqueryœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "FAISS",
             "id": "FAISS-CvTmU",
             "name": "search_results",
@@ -265,6 +237,62 @@
         "sourceHandle": "{œdataTypeœ:œParserComponentœ,œidœ:œParserComponent-irc6Oœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
         "target": "Prompt Template-7GXX3",
         "targetHandle": "{œfieldNameœ:œdatabase_contextœ,œidœ:œPrompt Template-7GXX3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-olFps",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "search_query",
+            "id": "FAISS-CvTmU",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "query"
+          }
+        },
+        "id": "xy-edge__ChatInput-olFps{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-FAISS-CvTmU{œfieldNameœ:œsearch_queryœ,œidœ:œFAISS-CvTmUœ,œinputTypesœ:[œMessageœ],œtypeœ:œqueryœ}",
+        "selected": false,
+        "source": "ChatInput-olFps",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-olFpsœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "FAISS-CvTmU",
+        "targetHandle": "{œfieldNameœ:œsearch_queryœ,œidœ:œFAISS-CvTmUœ,œinputTypesœ:[œMessageœ],œtypeœ:œqueryœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt Template-7GXX3",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "system_message",
+            "id": "IBMwatsonxModel-HGkxa",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Prompt Template-7GXX3{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-7GXX3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-IBMwatsonxModel-HGkxa{œfieldNameœ:œsystem_messageœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Prompt Template-7GXX3",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-7GXX3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "IBMwatsonxModel-HGkxa",
+        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œIBMwatsonxModel-HGkxaœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -1193,7 +1221,7 @@
         "dragging": false,
         "id": "IBMwatsonxModel-HGkxa",
         "measured": {
-          "height": 713,
+          "height": 714,
           "width": 320
         },
         "position": {
@@ -1736,7 +1764,7 @@
         "dragging": false,
         "id": "Prompt Template-7GXX3",
         "measured": {
-          "height": 509,
+          "height": 510,
           "width": 320
         },
         "position": {
@@ -2126,7 +2154,7 @@
         "dragging": false,
         "id": "Memory-JUFYw",
         "measured": {
-          "height": 220,
+          "height": 221,
           "width": 320
         },
         "position": {
@@ -2179,7 +2207,7 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-06-04T19:49:18.579Z",
+            "last_updated": "2026-06-06T08:35:06.149Z",
             "legacy": false,
             "metadata": {
               "code_hash": "c20646f04f8e",
@@ -2237,6 +2265,7 @@
                 "name": "path",
                 "options": null,
                 "required_inputs": null,
+                "selected": "Message",
                 "tool_mode": true,
                 "types": [
                   "Message"
@@ -3331,7 +3360,8 @@
                 "tool_mode": false,
                 "trace_as_metadata": true,
                 "track_in_telemetry": true,
-                "type": "str"
+                "type": "str",
+                "value": "ibm/slate-30m-english-rtrvr-v2"
               },
               "project_id": {
                 "_input_type": "StrInput",
@@ -3444,7 +3474,7 @@
           "x": 1338.664901497119,
           "y": -119.14400933347889
         },
-        "selected": false,
+        "selected": true,
         "type": "genericNode"
       },
       {
@@ -3935,9 +3965,9 @@
       }
     ],
     "viewport": {
-      "x": 95.25115781185468,
-      "y": 136.71872337144418,
-      "zoom": 0.5135132873306325
+      "x": 115.87356835581795,
+      "y": 152.95349939253234,
+      "zoom": 0.6207537827984863
     }
   },
   "description": "Navigate the Linguistic Landscape, Discover Opportunities.",
