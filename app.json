@@ -612,8 +612,8 @@
           "width": 192
         },
         "position": {
-          "x": 238.8159766947942,
-          "y": -119.646151167047
+          "x": 248.48164473623694,
+          "y": -82.59442367484993
         },
         "selected": false,
         "type": "genericNode"
@@ -1564,6 +1564,7 @@
             "is_input": null,
             "is_output": null,
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "3d3fd7b8a36f",
               "dependencies": {
@@ -1805,6 +1806,7 @@
             "frozen": false,
             "icon": "message-square-more",
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "7608453efb4e",
               "dependencies": {
@@ -2158,8 +2160,8 @@
           "width": 320
         },
         "position": {
-          "x": 259.8994604872964,
-          "y": 575.8418377907309
+          "x": 272.7870178758867,
+          "y": 469.5194893348611
         },
         "selected": false,
         "type": "genericNode"
@@ -2207,8 +2209,9 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-06-06T08:35:06.149Z",
+            "last_updated": "2026-06-06T18:50:36.766Z",
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "c20646f04f8e",
               "dependencies": {
@@ -2950,6 +2953,7 @@
             "frozen": false,
             "icon": "scissors-line-dashed",
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "859adebdf672",
               "dependencies": {
@@ -3219,6 +3223,7 @@
             "key": "WatsonxEmbeddingsComponent",
             "last_updated": "2026-06-04T19:53:13.138Z",
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "6effadae5f84",
               "dependencies": {
@@ -3474,7 +3479,7 @@
           "x": 1338.664901497119,
           "y": -119.14400933347889
         },
-        "selected": true,
+        "selected": false,
         "type": "genericNode"
       },
       {
@@ -3505,6 +3510,7 @@
             "frozen": false,
             "icon": "FAISS",
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "3e55e36d0692",
               "dependencies": {
@@ -3574,7 +3580,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": true,
                 "type": "bool",
-                "value": false
+                "value": true
               },
               "code": {
                 "advanced": true,
@@ -3789,7 +3795,9 @@
             ],
             "frozen": false,
             "icon": "braces",
+            "last_updated": "2026-06-06T18:50:43.142Z",
             "legacy": false,
+            "lf_version": "1.9.6",
             "metadata": {
               "code_hash": "cda7b997a730",
               "dependencies": {
@@ -3811,8 +3819,11 @@
                 "cache": true,
                 "display_name": "Parsed Text",
                 "group_outputs": false,
+                "loop_types": null,
                 "method": "parse_combined_text",
                 "name": "parsed_text",
+                "options": null,
+                "required_inputs": null,
                 "selected": "Message",
                 "tool_mode": true,
                 "types": [
@@ -3823,7 +3834,33 @@
             ],
             "pinned": false,
             "template": {
+              "_frontend_node_flow_id": {
+                "value": "5f0a9c53-803c-4e86-8b37-a8b7b3196d40"
+              },
+              "_frontend_node_folder_id": {
+                "value": "c114c69d-3185-4b08-a0e2-37bb584aba5b"
+              },
               "_type": "Component",
+              "clean_data": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Clean Data",
+                "dynamic": false,
+                "info": "Enable to clean the data by removing empty rows and lines in each cell of the DataFrame/ Data object.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "clean_data",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
               "code": {
                 "advanced": true,
                 "dynamic": true,
@@ -3867,6 +3904,7 @@
                 "type": "other",
                 "value": ""
               },
+              "is_refresh": false,
               "mode": {
                 "_input_type": "TabInput",
                 "advanced": false,
@@ -3888,7 +3926,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": true,
                 "type": "tab",
-                "value": "Parser"
+                "value": "Stringify"
               },
               "pattern": {
                 "_input_type": "MultilineInput",
@@ -3909,8 +3947,8 @@
                 "override_skip": false,
                 "password": false,
                 "placeholder": "",
-                "required": true,
-                "show": true,
+                "required": false,
+                "show": false,
                 "title_case": false,
                 "tool_mode": false,
                 "trace_as_input": true,
@@ -3953,21 +3991,21 @@
         "dragging": false,
         "id": "ParserComponent-irc6O",
         "measured": {
-          "height": 330,
+          "height": 249,
           "width": 320
         },
         "position": {
-          "x": 1677.6808962190096,
-          "y": 450.7742369616338
+          "x": 1693.7903429547475,
+          "y": 386.3364500186824
         },
-        "selected": false,
+        "selected": true,
         "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 115.87356835581795,
-      "y": 152.95349939253234,
-      "zoom": 0.6207537827984863
+      "x": 115.7563678136861,
+      "y": 178.35636617961848,
+      "zoom": 0.6193512827935639
     }
   },
   "description": "Navigate the Linguistic Landscape, Discover Opportunities.",
